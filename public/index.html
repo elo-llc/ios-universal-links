@@ -10,41 +10,58 @@
   <meta name="apple-itunes-app"
         content="app-id=6714447209, app-argument=https://links.getmystiks.com/">
 
-  <!-- Optional: Auto-redirect to App Store after 1.5s -->
-  <!-- <meta http-equiv="refresh" content="1.5;url=https://apps.apple.com/app/id6714447209"> -->
-
+  <!-- Open Graph (prettier sharing) -->
   <meta property="og:title" content="Mystiks" />
   <meta property="og:description" content="Open in the Mystiks app" />
   <meta property="og:url" content="https://links.getmystiks.com/" />
   <meta property="og:type" content="website" />
 
+  <!-- Geist font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
-    :root { color-scheme: light dark; }
     body {
-      font-family: -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-      min-height: 100vh; margin:0; display:grid; place-items:center; padding:24px;
-      background: var(--bg, #fafafa);
+      margin: 0;
+      height: 100vh;
+      background: #ffffff;
+      color: #111111;
+      font-family: "Geist", -apple-system, system-ui, sans-serif;
+      display: grid;
+      place-items: center;
+      text-align: center;
     }
-    .card {
-      max-width: 520px; text-align:center; padding:28px; border-radius:16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.07); background:#fff;
+    h1 {
+      font-size: 40px;
+      margin: 0 0 12px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
     }
-    h1 { margin: 0 0 6px; font-size: 28px; }
-    p  { margin: 0 0 16px; opacity:.85; }
-    a.button {
-      display:inline-block; padding:12px 18px; border-radius:12px;
-      text-decoration:none; background:#007aff; color:#fff; font-weight:600;
+    p {
+      margin: 0 0 20px;
+      font-size: 16px;
+      color: #444444;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 12px;
+      background: #007aff;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
     }
   </style>
 </head>
 <body>
-  <div class="card">
+  <div>
     <h1>Mystiks</h1>
     <p>If the app didn’t open automatically, tap below:</p>
     <p><a class="button" href="https://apps.apple.com/app/id6714447209">Open in the App Store</a></p>
   </div>
 
-  <!-- Optional JS fallback: after 1.5s, if app isn’t installed, nudge to App Store -->
+  <!-- Optional: gentle redirect after 1.5s -->
   <script>
     setTimeout(() => {
       if (document.visibilityState === 'visible') {
