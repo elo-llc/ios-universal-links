@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mystiks</title>
+  <meta name="robots" content="noindex,nofollow" />
+
+  <!-- iOS Smart App Banner -->
+  <meta name="apple-itunes-app"
+        content="app-id=6714447209, app-argument=https://links.getmystiks.com/">
+
+  <!-- Optional: Auto-redirect to App Store after 1.5s -->
+  <!-- <meta http-equiv="refresh" content="1.5;url=https://apps.apple.com/app/id6714447209"> -->
+
+  <meta property="og:title" content="Mystiks" />
+  <meta property="og:description" content="Open in the Mystiks app" />
+  <meta property="og:url" content="https://links.getmystiks.com/" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      min-height: 100vh; margin:0; display:grid; place-items:center; padding:24px;
+      background: var(--bg, #fafafa);
+    }
+    .card {
+      max-width: 520px; text-align:center; padding:28px; border-radius:16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.07); background:#fff;
+    }
+    h1 { margin: 0 0 6px; font-size: 28px; }
+    p  { margin: 0 0 16px; opacity:.85; }
+    a.button {
+      display:inline-block; padding:12px 18px; border-radius:12px;
+      text-decoration:none; background:#007aff; color:#fff; font-weight:600;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Mystiks</h1>
+    <p>If the app didn’t open automatically, tap below:</p>
+    <p><a class="button" href="https://apps.apple.com/app/id6714447209">Open in the App Store</a></p>
+  </div>
+
+  <!-- Optional JS fallback: after 1.5s, if app isn’t installed, nudge to App Store -->
+  <script>
+    setTimeout(() => {
+      if (document.visibilityState === 'visible') {
+        location.href = 'https://apps.apple.com/app/id6714447209';
+      }
+    }, 1500);
+  </script>
+</body>
+</html>
